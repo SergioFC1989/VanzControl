@@ -6,6 +6,7 @@ const Body = ({children, background, ...props}) => (
   <Box 
     background="#F7F7F7"
     align="center"
+    justify="center"
     {...props}
   >
     {children}

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { TextInput, Button, RoutedButton } from 'grommet';
 
-import Body from '../../components/Body';
-import HeaderComp from '../../components/HeaderComp' 
-import Frame from '../../components/Frame' 
-import FormBox from '../../components/FormBox'
+import Body from '../../../components/Body';
+import HeaderComp from '../../../components/HeaderComp' 
+import Frame from '../../../components/Frame' 
+import FormBox from '../../../components/FormBox'
 
 const Login = () => { 
   const [user, setUser] = useState('');

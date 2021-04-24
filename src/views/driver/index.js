@@ -14,7 +14,7 @@ import {
   Layer,
   Carousel, 
   Image,
-  Select} from 'grommet';
+  Select } from 'grommet';
 import { optionsStartShift } from '../../services/service'
 import errorFirebase from '../../services/firebase/error'
 import getCollections from '../../services/firebase/getCollections'
@@ -35,9 +35,9 @@ const FormStateCar = () => {
   const [statusCollapsible, setStatusCollapsible] = useState(false)
   const [show, setShow] = useState(false)
   const onShiftStart = data => {
-    for(let value in data){
-      if((data[value] === undefined)||(data[value] === 0)||(data[value] === "")) {
-        setError(`Revise los campos ${value}`)
+    for(let field in data){
+      if((data[field] === undefined)||(data[field] === 0)||(data[field] === "")) {
+        setError(`Revise el campo ${field}`)
         return
       }
     }
@@ -49,6 +49,7 @@ const FormStateCar = () => {
         <HeaderComp>
           <Frame>
             <RoundButton
+              to="/"
               icon={
                 <FormPreviousLink 
                   alignmentBaseline="central" 

@@ -7,6 +7,7 @@ const ErrorBox = ({ message }) => (
     background="status-error"
     pad="small"
     round="xsmall"
+    fill="horizontal"
   >
     <Text color="white">{message}</Text>
   </Box>

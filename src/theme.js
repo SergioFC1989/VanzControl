@@ -17,6 +17,7 @@ const theme = deepMerge(grommet, {
       'status-error': '#e36262',
       'status-warning': '#FBBD51',
       'brand-contrast': '#F2B044',
+      'brand-secondary': '#B675AA',
     },
     breakpoints: {
       small: {
@@ -37,6 +38,7 @@ const theme = deepMerge(grommet, {
         radius: '6px',
       },
     },
+    
     focus: {
       border: {
         color: 'transparent',
@@ -137,6 +139,7 @@ const theme = deepMerge(grommet, {
     },
   },
   button: {
+    opacity: 0,
     color: "white",
     hover: {
       secondary: {
@@ -169,22 +172,32 @@ const theme = deepMerge(grommet, {
         radius: '6px',
       },
       background: 'transparent',
+      opacity: 0,
       color: '#9A9ACE',
       padding: '10px',
     },
   },
   radioButton: {
-    hover: {
-      border: {
-        color: 'transparent',
-      },
-    },
+    check:{
+      color: 'brand'
+    }
   },
   select: {
     control: {
       extend: 'width: 100%'   
     },
   },
+  fileInput: {
+      background: {color:'red'},
+      label: {
+        margin: 'large'
+      },
+      hover: {
+        border: {
+          color: 'red'
+        }
+      }
+    },
 });
 
 export default theme;

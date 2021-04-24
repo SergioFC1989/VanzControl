@@ -5,12 +5,12 @@ import { Box, Heading, Text } from 'grommet';
 const FormBox = ({ icon, children, message, textMessage, onSubmit, ...props}) => {
   return(
     <>
-      <Box justify="center" direction="row">
+      <Box justify="center" align="center" direction="row">
         <Heading textAlign="center">{message}</Heading>
       </Box>
       <Text textAlign="center">{textMessage}</Text>
       <form onSubmit={onSubmit}>
-        <Box {...props}>
+        <Box align="center" {...props}>
           {children}
         </Box>
       </form>

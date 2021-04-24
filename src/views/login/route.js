@@ -1,13 +1,21 @@
 
-import index from './index'
+import admin from './admin/index'
+import user from './user/index'
 
-export const FEATURE_PATH = '/login';
+const loginAdmin = '/login/admin'
+const loginUser = '/login/user'
 
 export default [
   {
-    path: `${FEATURE_PATH}`,
-    component: index,
+    path: `${loginAdmin}`,
+    component: admin,
     exact: false,
     requireAuth: false,
-  }
+  },
+  {
+    path: `${loginUser}`,
+    component: user,
+    exact: false,
+    requireAuth: false,
+  },
 ];
